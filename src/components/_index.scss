@@ -1,0 +1,65 @@
+.sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sms {
+  border: 2px #0f246d solid;
+  padding: 15px;
+}
+
+footer {
+  background: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0f246d;
+}
+
+.lescv {
+  display: flex;
+  overflow-x: scroll;
+  padding: 50px 10px;
+  img {
+    height: 500px;
+    margin: 0px 30px;
+    box-shadow: 0px 4px 20px rgba(189, 188, 188, 0.35);
+    &:hover {
+      box-shadow: 0px 4px 20px rgba(189, 188, 188, 0.75);
+      cursor: pointer;
+    }
+  }
+}
+
+.cvup {
+  text-align: center;
+  position: relative;
+  img {
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(189, 188, 188, 0.35);
+  }
+}
+
+.arleft {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arright {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  &:hover {
+    cursor: pointer;
+  }
+}
