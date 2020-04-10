@@ -11,6 +11,11 @@ import CV3 from "../images/CV3.jpg"
 import CV4 from "../images/CV4.jpg"
 import CV5 from "../images/CV5.jpg"
 
+import telfigma from "../images/figma download.mp4"
+import figmaname from "../images/figma name.mp4"
+import sms from "../images/sms.mp4"
+import perso from "../images/cvperson.mp4"
+
 class IndexPage extends Component {
   constructor(props) {
     super(props)
@@ -67,8 +72,16 @@ class IndexPage extends Component {
         <h1>
           Ton <b> CV </b> <br /> au prix d'une pinte 🍺
         </h1>
+        <p>
+          Petit outil pour te créer ton CV idéal: choisis ton modèle et
+          personnalise-le très facilement. Enjoy !{" "}
+        </p>
 
-        <div className="sec-choice">
+        <video className="mainvid" loop playsInline autoPlay>
+          <source src={perso} type="video/mp4" />
+        </video>
+
+        <div className="sec-choice" id="fonctionnement">
           <h2> 1</h2>
           <p>
             {" "}
@@ -113,8 +126,10 @@ class IndexPage extends Component {
           </div>
         </div>
 
-        <div className="sec">
-          <video> </video>
+        <div className="sec pair">
+          <video className="video " loop playsInline autoPlay>
+            <source src={telfigma} type="video/mp4" />
+          </video>
           <div>
             <h2> 2</h2>
             <p>
@@ -160,11 +175,15 @@ class IndexPage extends Component {
               />
             </form>
           </div>
-          <video> </video>
+          <video className="video" loop playsInline autoPlay>
+            <source src={figmaname} type="video/mp4" />
+          </video>
         </div>
 
-        <div className="sec">
-          <video> </video>
+        <div className="sec pair">
+          <video className="video" loop playsInline autoPlay>
+            <source src={sms} type="video/mp4" />
+          </video>
           <div>
             <h2> 4</h2>
             <p>
@@ -187,19 +206,21 @@ class IndexPage extends Component {
           <div>
             <h2> 5</h2>
             <p>
-              Un petit Lydia de 5,50 € au même numéro (0659133919) en{" "}
+              Paie-moi une petite bière (5,50 € via Lydia au 0659133919) en{" "}
               <b>précisant bien ton nom et prénom</b> et je te partage le modèle
               de CV sur Figma que tu pourras personnaliser à souhait !
             </p>
           </div>
-          <video> </video>
+          <video className="video" loop playsInline autoPlay>
+            <source src={perso} type="video/mp4" />
+          </video>
         </div>
 
         <br />
         <br />
         <br />
 
-        <div className="contact">
+        <div className="contact" id="contact">
           <h3>
             <strong>Une question? Un problème? </strong>
           </h3>

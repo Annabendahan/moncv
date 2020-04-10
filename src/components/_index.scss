@@ -1,7 +1,22 @@
 .sec {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+
+  margin: 50px 0px;
+  @include breakpoint(s) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.pair {
+  display: flex;
+  flex-direction: column-reverse;
+  @include breakpoint(s) {
+    flex-direction: row;
+  }
 }
 
 .sms {
@@ -20,6 +35,7 @@ input {
   outline: none;
   border: none;
   border-bottom: 2px solid #0f246d;
+  background: #fbfbfb;
 }
 
 .lescv {
@@ -38,6 +54,7 @@ input {
 }
 
 .cvup {
+  margin-top: 70px;
   text-align: center;
   position: relative;
   img {
@@ -48,8 +65,20 @@ input {
 
 .arleft {
   position: absolute;
-  top: 50%;
-  left: 0%;
+  top: -10%;
+  left: 20%;
+
+  @include breakpoint(s) {
+    top: 50%;
+    left: -10%;
+  }
+  @include breakpoint(m) {
+    top: 50%;
+    left: 0%;
+  }
+
+  width: 40px;
+
   &:hover {
     cursor: pointer;
   }
@@ -57,9 +86,57 @@ input {
 
 .arright {
   position: absolute;
-  top: 50%;
-  right: 0%;
+  top: -10%;
+  right: 20%;
+
+  @include breakpoint(s) {
+    top: 50%;
+    right: -10%;
+  }
+  @include breakpoint(m) {
+    top: 50%;
+    right: 0%;
+  }
+
+  width: 40px;
   &:hover {
     cursor: pointer;
+  }
+}
+
+.video {
+  width: 100%;
+  @include breakpoint(s) {
+    width: 50%;
+    margin: 60px;
+  }
+}
+
+.mainvid {
+  width: 100%;
+  @include breakpoint(s) {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+.header-content {
+  margin-left: 30%;
+  width: 230px;
+  @include breakpoint(s) {
+    margin-left: 60%;
+    width: 270px;
+  }
+  @include breakpoint(m) {
+    margin-left: 70%;
+    width: 270px;
+  }
+  @include breakpoint(l) {
+    margin-left: 70%;
+    width: 270px;
+  }
+  @include breakpoint(xl) {
+    margin-left: 80%;
+    width: 270px;
   }
 }

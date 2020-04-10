@@ -8,20 +8,20 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1rem`,
       maxWidth: 960,
       margin: `0 auto`,
+      position: "relative",
     }}
   >
     <div
+      className="header-content"
       style={{
         display: `flex`,
         justifyContent: `space-between`,
-        width: `300px`,
-        marginLeft: `80%`,
 
         padding: `1.45rem 1.0875rem`,
       }}
     >
       <Link
-        to="/"
+        to="/#fonctionnement"
         style={{
           color: `black`,
           textDecoration: `none`,
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
       </Link>
 
       <Link
-        to="/"
+        to="/#contact"
         style={{
           color: `black`,
           textDecoration: `none`,

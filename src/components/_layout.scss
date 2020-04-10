@@ -203,6 +203,7 @@ html {
 body {
   color: hsla(0, 0%, 0%, 0.8);
   overflow: hidden;
+  background: #fbfbfb;
   font-family: avenir;
   font-weight: normal;
   word-wrap: break-word;
@@ -236,8 +237,11 @@ h1 {
   font-family: Avenir;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 4.25rem;
+  font-size: 2.25rem;
   line-height: 1.1;
+  @include breakpoint(m) {
+    font-size: 4em;
+  }
 }
 h2 {
   margin-left: 0;
@@ -619,5 +623,12 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+main {
+  margin: 0px 2%;
+  @include breakpoint(s) {
+    margin: 0px 8%;
   }
 }

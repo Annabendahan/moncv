@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1160,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 1560,
+          padding: `0 1.0875rem 1rem`,
         }}
       >
         <main>{children}</main>
@@ -40,9 +40,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
         }}
       >
-        © {new Date().getFullYear()}, Tous droits réservés. Construit avec
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()}, Tous droits réservés.
       </footer>
     </>
   )
