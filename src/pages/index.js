@@ -130,7 +130,7 @@ class IndexPage extends Component {
           <video className="video " muted loop playsInline autoPlay>
             <source src={telfigma} type="video/mp4" />
           </video>
-          <div>
+          <div className="text">
             <h2> 2</h2>
             <p>
               Télécharge{" "}
@@ -144,7 +144,7 @@ class IndexPage extends Component {
         </div>
 
         <div className="sec">
-          <div>
+          <div className="text">
             <h2> 3</h2>
             <p>
               Une fois ton compte créé, entre ici ton nom et ton prénom, et
@@ -184,7 +184,7 @@ class IndexPage extends Component {
           <video className="video" muted loop playsInline autoPlay>
             <source src={sms} type="video/mp4" />
           </video>
-          <div>
+          <div className="text">
             <h2> 4</h2>
             <p>
               Copie-colle ce sms et envoie-le moi au <b>0659133919</b>
@@ -203,7 +203,7 @@ class IndexPage extends Component {
         </div>
 
         <div className="sec">
-          <div>
+          <div className="text">
             <h2> 5</h2>
             <p>
               Paie-moi une petite bière (5,50 € via Lydia au 0659133919) en{" "}
