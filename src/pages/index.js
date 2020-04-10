@@ -77,7 +77,7 @@ class IndexPage extends Component {
           personnalise-le très facilement. Enjoy !{" "}
         </p>
 
-        <video className="mainvid" loop playsInline autoPlay>
+        <video className="mainvid" muted loop playsInline autoPlay>
           <source src={perso} type="video/mp4" />
         </video>
 
@@ -127,7 +127,7 @@ class IndexPage extends Component {
         </div>
 
         <div className="sec pair">
-          <video className="video " loop playsInline autoPlay>
+          <video className="video " muted loop playsInline autoPlay>
             <source src={telfigma} type="video/mp4" />
           </video>
           <div>
@@ -175,13 +175,13 @@ class IndexPage extends Component {
               />
             </form>
           </div>
-          <video className="video" loop playsInline autoPlay>
+          <video className="video" muted loop playsInline autoPlay>
             <source src={figmaname} type="video/mp4" />
           </video>
         </div>
 
         <div className="sec pair">
-          <video className="video" loop playsInline autoPlay>
+          <video className="video" muted loop playsInline autoPlay>
             <source src={sms} type="video/mp4" />
           </video>
           <div>
@@ -211,7 +211,7 @@ class IndexPage extends Component {
               de CV sur Figma que tu pourras personnaliser à souhait !
             </p>
           </div>
-          <video className="video" loop playsInline autoPlay>
+          <video className="video" muted loop playsInline autoPlay>
             <source src={perso} type="video/mp4" />
           </video>
         </div>
