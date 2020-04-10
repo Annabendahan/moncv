@@ -85,7 +85,7 @@ class IndexPage extends Component {
           <h2> 1</h2>
           <p>
             {" "}
-            Choisis ton <b>modèle </b>
+            Choisis ton <b>modèle </b> - n° {this.state.cv}
           </p>
           <div className="cvup">
             <img src={cvDisplay} alt="cv1" />
